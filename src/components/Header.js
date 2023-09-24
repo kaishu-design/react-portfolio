@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const header = () => {
   return (
@@ -11,14 +12,14 @@ const header = () => {
       </button>
       <div class="collapse navbar-collapse d-flex justify-content-evenly" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <li class="nav-item m-3">
+          <Link to="/HomePage">Home</Link>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Projects</a>
+        <li class="nav-item m-3">
+          <Link to="/ProjectsPage">Projects</Link>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">About</a>
+        <li class="nav-item m-3">
+          <Link to="/AboutPage">About</Link>
         </li>
       </ul>
       </div>
