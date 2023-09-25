@@ -14,6 +14,20 @@
   margin-right: 20px;
 }
 
+.skills{
+  margin-left: 150px;
+  margin-top: 2%;
+}
+
+/* .btn-about-me{
+
+} */
+
+.btn-about-me-text{
+  text-decoration: none;
+  color: rgb(93, 99, 107);
+}
+
 /* .App {
   text-align: center;
 }
