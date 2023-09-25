@@ -12,6 +12,15 @@
   color: black;
 }
 
+.see-more{
+  float: right;
+  /* border: none; */
+}
+
+.see-more-text{
+  color: rgb(93, 99, 107);
+}
+
 
 /* .App {
   text-align: center;
