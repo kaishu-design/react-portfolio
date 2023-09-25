@@ -1,4 +1,29 @@
+.nav-back{
+  background-color: rgb(191, 174, 150);
+}
 
+.title-link{
+  color: black;
+  margin-left: 150px;
+  font-size: 25px;
+}
+
+.text-link{
+  color: black;
+}
+
+.see-more{
+  float: right;
+  margin-right: 300px;
+}
+
+.skills{
+  margin-left: 170px;
+}
+
+.see-more-text{
+  color: rgb(93, 99, 107);
+}
 
 
 /* .App {
