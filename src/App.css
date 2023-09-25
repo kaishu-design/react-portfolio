@@ -1,4 +1,16 @@
+.nav-back{
+  background-color: rgb(191, 174, 150);
+}
 
+.title-link{
+  color: black;
+  margin-left: 150px;
+  font-size: 25px;
+}
+
+.text-link{
+  color: black;
+}
 
 
 /* .App {
