@@ -14,7 +14,11 @@
 
 .see-more{
   float: right;
-  /* border: none; */
+  margin-right: 300px;
+}
+
+.skills{
+  margin-left: 170px;
 }
 
 .see-more-text{
