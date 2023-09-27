@@ -20,17 +20,21 @@ const myProjects = [
 
 const Projects = () => {
   return (
-    <div className='container-projects'>
-      <div className='head-title'>
+    <div className='container'>
+      <div className='d-flex justify-content-center head-title'>
         <h1>Projects</h1>
       </div>
-      <div>
-        {myProjects.map(project => (
-          <div key={project.id}>
-            <h2>{project.name}</h2>
-            <p>{project.description}</p>
-          </div>
-        ))}
+      <div className='d-flex justify-content-center card title-line'></div>
+
+      <div className="row my-5">
+        <div className="col-12">
+            {myProjects.map(project => (
+              <div key={project.id} className="card">
+                <h2>{project.name}</h2>
+                <p>{project.description}</p>
+              </div>
+            ))}
+        </div>
       </div>
     </div>
   )

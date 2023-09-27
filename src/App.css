@@ -30,6 +30,14 @@
   color: rgb(93, 99, 107);
 }
 
+.title-line{
+  width: 80%;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
 /* .App {
   text-align: center;
 }
