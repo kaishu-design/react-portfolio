@@ -1,27 +1,4 @@
-.navBack{
-  background-color:rgb(191, 174, 150) ;
-  height: 80px;
-}
 
-.navTitle{
-  font-size: 25px;
-  color: black;
-  margin-left: 120px;
-}
-
-.navLink{
-  color: black;
-  margin-right: 20px;
-}
-
-.skills{
-  margin-left: 150px;
-  margin-top: 2%;
-}
-
-/* .btn-about-me{
-
-} */
 
 .btn-about-me-text{
   text-decoration: none;

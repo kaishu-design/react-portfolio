@@ -1,26 +1,27 @@
 import React from 'react';
 import '../App.css';
 import { Link } from 'react-router-dom';
+import '../App.css'
 
 const header = () => {
   return (
 
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
-    <div className="container-fluid  navBack">
-    <Link to="/HomePage" className='text-decoration-none navTitle'>Portfolio</Link>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse d-flex justify-content-evenly">
-      <ul className="navbar-nav">
-        <li className="nav-item m-3">
-          <Link to="/HomePage" className='text-decoration-none navLink'>Home</Link>
+      <div class="collapse navbar-collapse d-flex justify-content-evenly" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item m-3">
+          <Link to="/HomePage">Home</Link>
         </li>
-        <li className="nav-item m-3">
-          <Link to="/ProjectsPage" className='text-decoration-none navLink'>Projects</Link>
+        <li class="nav-item m-3">
+          <Link to="/ProjectsPage">Projects</Link>
         </li>
-        <li className="nav-item m-3">
-          <Link to="/AboutPage" className='text-decoration-none navLink'>About</Link>
+        <li class="nav-item m-3">
+          <Link to="/AboutPage">About</Link>
         </li>
       </ul>
       </div>
