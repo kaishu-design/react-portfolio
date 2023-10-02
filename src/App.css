@@ -1,5 +1,11 @@
-.nav-back{
+.header-back{
   background-color: rgb(191, 174, 150);
+}
+
+.footer-back{
+  background-color:  rgb(228, 221, 212);
+  width: 100%;
+  height: 80px;
 }
 
 .title-link{
