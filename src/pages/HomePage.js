@@ -5,13 +5,13 @@ import Projects from '../components/Projects.js';
 
 const HomePage = () => {
   return (
-    <div className="row my-5">
-      <div className="col-12">
-        <Profile />
+  <div className="row my-5">
+    <div className="col-12">
+      <Profile />
 
-        <Projects />
-      </div>
+      <Projects />
     </div>
+  </div>
   );
 }
 

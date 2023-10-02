@@ -29,34 +29,34 @@ const Projects = () => {
       </div>
       <div className={`${center} card title-line`}></div>
 
-      <div className='project-card m-5'>
-        <div className="le-make row my-4">
-          <div className={`${center} col-12 projrct-title`}>
-            <h2>{leMake.name}</h2>
-          </div>
+      <div className='project-cards'>
+        <div className="project-card row card my-4">
           <div className='row projrct-info'>
             <img src={leMake.img} alt={leMake.name} className='col-4' />
-            <p className='col-8'>{leMake.description}</p>
+            <div className='col-8 projrct-title'>
+              <h2>{leMake.name}</h2>
+              <p>{leMake.description}</p>
+            </div>
           </div>
         </div>
 
-        <div className="rent-chef row my-4">
-          <div className={`${center} col-12 projrct-title`}>
-            <h2>{RentAChef.name}</h2>
-          </div>
+        <div className="project-card row card my-4">
           <div className='row projrct-info'>
-            <p className='col-8'>{RentAChef.description}</p>
+            <div className='col-8 projrct-title'>
+              <h2>{RentAChef.name}</h2>
+              <p>{RentAChef.description}</p>
+            </div>
             <img src={RentAChef.img} alt={RentAChef.name} className='col-4' />
           </div>
         </div>
 
-        <div className="photographer row my-4">
-          <div className={`${center} col-12 projrct-title`}>
-            <h2>{Photographer.name}</h2>
-          </div>
+        <div className="project-card row card my-4">
           <div className='row projrct-info'>
             <img src={Photographer.img} alt={Photographer.name} className='col-4' />
-            <p className='col-8'>{Photographer.description}</p>
+            <div className='col-8 projrct-title'>
+              <h2>{Photographer.name}</h2>
+              <p>{Photographer.description}</p>
+            </div>
           </div>
         </div>
       </div>

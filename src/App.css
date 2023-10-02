@@ -38,10 +38,15 @@
   margin-bottom: 60px;
 }
 
-.projrctCard{
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: auto;
+.project-cards{
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.project-card{
+  margin: 30px;
+  padding: 50px;
+  border-color: black;
 }
 
 /* .App {
