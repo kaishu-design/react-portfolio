@@ -1,5 +1,6 @@
 import React from 'react'
 import '../images/le-make-img.png'
+import { Link } from 'react-router-dom';
 
 const leMake = {
   name: "LE'MAKE",
@@ -36,6 +37,7 @@ const Projects = () => {
             <div className='col-8 projrct-title'>
               <h2>{leMake.name}</h2>
               <p>{leMake.description}</p>
+                <Link to="/ProjectsPage" className="text-decoration-none float-end see-more-text">See more</Link>
             </div>
           </div>
         </div>

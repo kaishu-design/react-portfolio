@@ -14,10 +14,10 @@ const footer = () => {
               <Link to="https://www.linkedin.com/in/kaishu-kawano/" target='_blank'className="text-decoration-none text-link">Linked in</Link>
             </li>
             <li className="nav-item m-3">
-              <Link to="/ProjectsPage" className="text-decoration-none text-link">wantedly</Link>
+              <Link to="https://www.wantedly.com/id/kaishu" target='_blank' className="text-decoration-none text-link">wantedly</Link>
             </li>
             <li className="nav-item m-3">
-              <Link to="/AboutPage"  className="text-decoration-none text-link">Git hub</Link>
+              <Link to="https://github.com/kaishu-design" target='_blank'  className="text-decoration-none text-link">Git hub</Link>
             </li>
           </ul>
         </div>
