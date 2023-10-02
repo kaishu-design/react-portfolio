@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const footer = () => {
   return (
 
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg">
     <div className="footer-back">
       <div className="collapse navbar-collapse d-flex justify-content-evenly" id="navbarNav">
         <div>
