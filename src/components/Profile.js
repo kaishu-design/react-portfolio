@@ -1,5 +1,6 @@
 import React from 'react'
 import '../images/myphoto.jpg';
+import SkillList from './SkillList.js';
 import { Link } from 'react-router-dom';
 
 const prodfile = () => {
@@ -17,14 +18,13 @@ const prodfile = () => {
           <img src="../images/myphoto.jpg" alt="Kai" className="my-photo" />
         </div>
       </div>
-      <div className="skills">
+      <SkillList />
         <p>HTML, CSS, Javascript, React, Ruby on Rails, SQL, Figma, Github, Project management</p>
         <div className="see-more">
           <Link to="/AboutPage" className="text-decoration-none see-more-text">more about me</Link>
         </div>
       </div>
     </div>
-  </div>
   </div>
   )
 }
