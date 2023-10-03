@@ -20,7 +20,7 @@ const prodfile = () => {
       <div className="skills">
         <p>HTML, CSS, Javascript, React, Ruby on Rails, SQL, Figma, Github, Project management</p>
         <div className="see-more">
-          <Link to="AboutPage" className="text-decoration-none see-more-text">more about me</Link>
+          <Link to="/AboutPage" className="text-decoration-none see-more-text">more about me</Link>
         </div>
       </div>
     </div>
