@@ -1,32 +1,32 @@
 import React from 'react'
 import '../App.css';
 
-// const center = 'd-flex justify-content-center'
+const center = 'd-flex justify-content-start'
 
 const Skills = [
   {
     id: 1,
-    skill: 'html',
+    skill: 'HTML',
     img: 'https://cdn-icons-png.flaticon.com/512/919/919827.png',
   },
   {
     id: 2,
-    skill: 'css',
+    skill: 'CSS',
     img: 'https://cdn-icons-png.flaticon.com/512/919/919826.png',
   },
   {
     id: 3,
-    skill: 'js',
+    skill: 'JavaScript',
     img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png',
   },
   {
     id: 4,
-    skill: 'react',
+    skill: 'React',
     img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png',
   },
   {
     id: 5,
-    skill: 'ruby',
+    skill: 'Ruby',
     img: 'https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/ruby/logo.png'
   },
   {
@@ -46,19 +46,59 @@ const Skills = [
   },
   {
     id: 9,
-    skill: 'Github',
+    skill: 'SCSS',
+    img: 'https://sass-lang.com/assets/img/styleguide/seal-color.png'
+  },
+  {
+    id: 10,
+    skill: 'Bootstraps',
+    img: 'https://camo.githubusercontent.com/2512b49c89512f2ff3718f7257f48ed5c46a4e331abbd890b6c5e8c0e458434f/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e322f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67'
+  },
+  {
+    id: 11,
+    skill: 'GitHub',
     img: 'https://w7.pngwing.com/pngs/914/758/png-transparent-github-social-media-computer-icons-logo-android-github-logo-computer-wallpaper-banner-thumbnail.png'
   },
 ];
 
 export const SkillList = () => {
+  const firstColumnSkills = Skills.slice(0, 6);
+  const secondColumnSkills = Skills.slice(6, 11);
+
   return (
-    <div className="skills">
-      {Skills.map((skill) => (
-          <img key={skill.id} src={skill.img} alt={skill.skill} className="skill-image"></img>
-      ))}
+    <div className="row mt-5 skills">
+      <div className={`${center} col-12`}>
+        {firstColumnSkills.map((skill) => (
+          <div key={skill.id} className="skill-item">
+            <img src={skill.img} alt={skill.skill} className="skill-image" />
+            <p className="text-center fs-6">{skill.skill}</p>
+          </div>
+        ))}
+      </div>
+      <div className={`${center} col-12`}>
+        {secondColumnSkills.map((skill) => (
+          <div key={skill.id} className="skill-item">
+            <img src={skill.img} alt={skill.skill} className="item-center skill-image" />
+            <p className="text-center fs-6">{skill.skill}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
-
 export default SkillList;
+
+// export const SkillList = () => {
+//   return (
+//     <div className="row  mt-5 skills">
+//       <div className={`${center} col-12`}>
+//         {Skills.map((skill) => (
+//           <div  key={skill.id}>
+//             <img src={skill.img} alt={skill.skill} className="skill-image"></img>
+//             <p className="text-center fs-6">{skill.skill}</p>
+//           </div>
+//         ))}
+//         </div>
+//     </div>
+//   );
+// };
