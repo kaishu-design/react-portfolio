@@ -33,6 +33,9 @@
   padding-right: 10px;
 }
 
+.photo-card{
+  border: none !important;
+}
 
 .my-photo{
   /* position: absolute;
@@ -44,10 +47,15 @@
   object-fit: cover;
   /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); */
 }
-.see-more{
+
+.wantedly{
+  width: 20px;
+}
+
+/* .see-more{
   float: right;
   margin-right: 140px;
-}
+} */
 
 .skills{
   position: absolute;
@@ -64,9 +72,9 @@
   margin: 0 auto ;
 }
 
-.see-more-text{
+/* .see-more-text{
   color: rgb(93, 99, 107);
-}
+} */
 
 .sns-link{
   margin-top: 30px;
