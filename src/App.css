@@ -20,15 +20,18 @@
 
 .see-more{
   float: right;
-  margin-right: 300px;
+  margin-right: 140px;
 }
 
 .skills{
-  margin-left: 170px;
+  margin-left: 120px;
+  margin-top: 30px;
 }
 
 .skill-image{
   width: 30px;
+  height: 30px;
+  margin-right: 20px;
 }
 
 .see-more-text{
@@ -44,8 +47,8 @@
   width: 80%;
   margin-left: 100px;
   margin-right: 100px;
-  margin-top: 40px;
-  margin-bottom: 60px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .project-cards{

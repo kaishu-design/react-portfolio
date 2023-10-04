@@ -16,10 +16,10 @@ const prodfile = () => {
         </div>
         <div className="my-photo">
           <img src="../images/myphoto.jpg" alt="Kai" className="my-photo" />
+
         </div>
       </div>
       <SkillList />
-        <p>HTML, CSS, Javascript, React, Ruby on Rails, SQL, Figma, Github, Project management</p>
         <div className="see-more">
           <Link to="/AboutPage" className="text-decoration-none see-more-text">more about me</Link>
         </div>
