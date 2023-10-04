@@ -24,15 +24,15 @@ const prodfile = () => {
             <div className="my-photo">
               <img src={myPhoto} alt="Kai" className="my-photo" />
             </div>
-            <div className="text-center sns-link">
+            <div className="text-center sns-links">
               <a href="https://www.linkedin.com/in/kaishu-kawano/" >
-              <FontAwesomeIcon icon={faLinkedin} />
+              <FontAwesomeIcon icon={faLinkedin} className="sns-link"/>
               </a>
               <a href="https://www.wantedly.com/id/kaishu" >
-              <img src={wantedly} alt="wantedly" className="wantedly m-2" />
+              <img src={wantedly} alt="wantedly" className="wantedly mx-3 mb-3"/>
               </a>
               <a href="https://github.com/kaishu-design" >
-              <FontAwesomeIcon icon={faSquareGithub} style={{color: "#ff9d2e",}} />
+              <FontAwesomeIcon icon={faSquareGithub} style={{color: "#ff9d2e",}} className="sns-link" />
               </a>
             </div>
               <Link to="/AboutPage" className="text-center btn btn-outline-secondary text-decoration-none see-more-text">more about me</Link>
