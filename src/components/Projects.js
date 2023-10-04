@@ -1,26 +1,26 @@
 import React from 'react'
-import '../images/le-make-img.png'
+import lemake from '../images/le-make-img.png'
 import { Link } from 'react-router-dom';
 
 const leMake = {
   name: "LE'MAKE",
   description: "An avatar, in the context of digital media and online communication, is a visual representation or image that is used to represent a person, user, or entity in a virtual or digital environment. Avatars are often used in various online platforms, social media networks, forums, video games, and virtual worlds. Here's a more detailed description of avatars:",
   techStack:"Rails, Sass, HTML, JavaScript, Figma, Github",
-  img: 'le-make-img.png'
+  img: lemake
 };
 
 const RentAChef =  {
   name: "Rent a chef",
   description: "An avatar, in the context of digital media and online communication, is a visual representation or image that is used to represent a person, user, or entity in a virtual or digital environment. Avatars are often used in various online platforms, social media networks, forums, video games, and virtual worlds. Here's a more detailed description of avatars:",
   techStack:"Rails, Sass, HTML, JavaScript, Figma, Github",
-  img: 'le-make-img.png'
+  img: lemake
 };
 
 const Photographer =  {
   name: "Photographer web page",
   description: "An avatar, in the context of digital media and online communication, is a visual representation or image that is used to represent a person, user, or entity in a virtual or digital environment. Avatars are often used in various online platforms, social media networks, forums, video games, and virtual worlds. Here's a more detailed description of avatars:",
   techStack:"React, CSS, HTML, Figma, Github",
-  img: 'le-make-img.png'
+  img: lemake
 };
 
 const center = 'd-flex justify-content-center'

@@ -1,11 +1,6 @@
+/* header */
 .header-back{
   background-color: rgb(191, 174, 150);
-}
-
-.footer-back{
-  background-color:  rgb(228, 221, 212);
-  width: 100%;
-  height: 80px;
 }
 
 .title-link{
@@ -18,14 +13,33 @@
   color: black;
 }
 
+/* footer */
+.footer-back{
+  background-color:  rgb(228, 221, 212);
+  width: 100%;
+  height: 80px;
+}
+
+/* profile */
+.job-title{
+  margin-top: 100px;
+}
+
+.my-photo{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
 .see-more{
   float: right;
   margin-right: 140px;
 }
 
 .skills{
-  margin-left: 120px;
-  margin-top: 30px;
+  margin-left: 70px;
+  margin-top: 100px;
 }
 
 .skill-image{
@@ -43,6 +57,7 @@
   color: rgb(93, 99, 107);
 }
 
+/* projects */
 .title-line{
   width: 80%;
   margin-left: 100px;
