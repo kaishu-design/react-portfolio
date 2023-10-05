@@ -35,7 +35,7 @@ const prodfile = () => {
               <FontAwesomeIcon icon={faSquareGithub} style={{color: "#ff9d2e",}} className="sns-link" />
               </a>
             </div>
-              <Link to="/AboutPage" className="text-center btn btn-outline-secondary text-decoration-none see-more-text">more about me</Link>
+              <Link to="/AboutPage" className="text-center btn btn-outline-secondary text-decoration-none mx-5 mt-3">About me</Link>
           </div>
         </div>
       </div>
