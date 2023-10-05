@@ -35,10 +35,12 @@ const Projects = () => {
 
       <div className='project-cards'>
         <div className="project-card row card my-4">
+          <div className="mb-2">
+            <h2  className="text-center">{leMake.name}</h2>
+          </div>
           <div className='row projrct-info'>
             <img src={leMake.img} alt={leMake.name} className='col-4' />
             <div className='col-8 projrct-title'>
-              <h2>{leMake.name}</h2>
               <p>{leMake.description}</p>
               <p>Tech stack : {leMake.techStack}</p>
                 <Link to="/ProjectsPage" className="text-decoration-none float-end see-more-text">See more</Link>
@@ -47,9 +49,11 @@ const Projects = () => {
         </div>
 
         <div className="project-card row card my-4">
+        <div className="mb-2">
+            <h2  className="text-center">{RentAChef.name}</h2>
+          </div>
           <div className='row projrct-info'>
             <div className='col-8 projrct-title'>
-              <h2>{RentAChef.name}</h2>
               <p>{RentAChef.description}</p>
               <p>Tech stack : {RentAChef.techStack}</p>
             </div>
@@ -58,10 +62,12 @@ const Projects = () => {
         </div>
 
         <div className="project-card row card my-4">
+          <div className="mb-2">
+            <h2  className="text-center">{Photographer.name}</h2>
+          </div>
           <div className='row projrct-info'>
             <img src={Photographer.img} alt={Photographer.name} className='col-4' />
             <div className='col-8 projrct-title'>
-              <h2>{Photographer.name}</h2>
               <p>{Photographer.description}</p>
               <p>Tech stack : {Photographer.techStack}</p>
             </div>
