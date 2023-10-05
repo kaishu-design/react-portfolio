@@ -4,8 +4,17 @@ import { Link } from 'react-router-dom';
 
 const leMake = {
   name: "LE'MAKE",
-  description: "An avatar, in the context of digital media and online communication, is a visual representation or image that is used to represent a person, user, or entity in a virtual or digital environment. Avatars are often used in various online platforms, social media networks, forums, video games, and virtual worlds. Here's a more detailed description of avatars:",
-  techStack:"Rails, Sass, HTML, JavaScript, Figma, Github",
+  description:
+  "This app provides tailored recipes based on your current ingredient inventory, available time, and the number of people you intend to cook for.\n" +
+  "I involved this project with three Melborne members fully online.",
+  techStack:
+  "Framework: Ruby on Rails\n" +
+  "Languages: HTML, Sass, Ruby, JavaScript\n" +
+  "Design: Figma,\n" +
+  "Source Code Management: GitHub\n" +
+  "Project Management: Trello\n" +
+  "Collaboration: Slack\n" +
+  "Computer: Mac",
   img: lemake
 };
 
@@ -38,12 +47,23 @@ const Projects = () => {
           <div className="mb-2">
             <h2  className="text-center">{leMake.name}</h2>
           </div>
-          <div className='row projrct-info'>
-            <img src={leMake.img} alt={leMake.name} className='col-4' />
-            <div className='col-8 projrct-title'>
-              <p>{leMake.description}</p>
-              <p>Tech stack : {leMake.techStack}</p>
-                <Link to="/ProjectsPage" className="text-decoration-none float-end see-more-text">See more</Link>
+          <div className='row'>
+            <img src={leMake.img} alt={leMake.name} className='col-5 p-5' />
+            <div className='col-7 projrct-info fs-5 p-5'>
+              <div className='mb-3 projrct-desc'>
+                {leMake.description.split('\n').map((line, index) => (
+                  <p key={index} className="m-0">{line}</p>
+                ))}
+              </div>
+              <div className='mb-3 projrct-techStack'>
+                {leMake.techStack.split('\n').map((line, index) => (
+                  <p key={index} className="m-0">{line}</p>
+                ))}
+              </div>
+              <div className="d-flex justify-content-end">
+                  <Link to="https://github.com/kaishu-design" className="btn btn-outline-secondary text-decoration-none ms-3">Code</Link>
+                  <Link to="/ProjectsPage" className="btn btn-outline-secondary text-decoration-none ms-3">See more</Link>
+              </div>
             </div>
           </div>
         </div>
@@ -62,7 +82,7 @@ const Projects = () => {
         </div>
 
         <div className="project-card row card my-4">
-          <div className="mb-2">
+        <div className="mb-2">
             <h2  className="text-center">{Photographer.name}</h2>
           </div>
           <div className='row projrct-info'>
