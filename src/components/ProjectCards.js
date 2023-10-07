@@ -1,4 +1,5 @@
 import React from 'react'
+// import React, { useRef, useEffect } from 'react'
 import lemake from '../images/le-make-img.png'
 import { Link } from 'react-router-dom';
 
@@ -130,6 +131,7 @@ const ProjectCards = () => {
         </div>
 
       </div>
+
   )
 }
 
