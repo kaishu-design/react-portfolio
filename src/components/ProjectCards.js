@@ -2,6 +2,8 @@ import React from 'react'
 // import React, { useRef, useEffect } from 'react'
 import lemake from '../images/le-make-img.png'
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faImage } from '@fortawesome/free-regular-svg-icons';
 
 const leMake = {
   name: "LE'MAKE",
@@ -47,7 +49,6 @@ const Photographer =  {
   "Source Code Management: GitHub\n" +
   "Collaboration: in person, sns tool\n" +
   "Computer: Mac",
-  img: lemake
 };
 
 const ProjectCards = () => {
@@ -109,7 +110,10 @@ const ProjectCards = () => {
             <h2  className="text-center">{Photographer.name}</h2>
           </div>
           <div className='row'>
-            <img src={Photographer.img} alt={Photographer.name} className='col-5 p-5' />
+          <div className='col-5 text-center comming-soon'>
+            <FontAwesomeIcon icon={faImage} style={{color: "#929bab",}} />
+            <p>Commig soon</p>
+          </div>
             <div className='col-7 projrct-info fs-5 p-5'>
               <div className='mb-3 projrct-desc'>
                 {Photographer.description.split('\n').map((line, index) => (
