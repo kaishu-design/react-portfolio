@@ -22,8 +22,8 @@ const leMake = {
 const RentAChef =  {
   name: "Rent a chef",
   description:
-  "This app provides tailored recipes based on your current ingredient inventory, available time, and the number of people you intend to cook for.\n" +
-  "I involved this project with three Melborne members fully online.",
+  "Created a Airbnb clone. This allows you to rent a chefs from various chef offers baced on the location and cuisines.\n" +
+  "This was the first project with a team. Same teammate as LE'MAKE app.",
   techStack:
   "Framework: Ruby on Rails\n" +
   "Languages: HTML, Sass, Ruby, JavaScript\n" +
@@ -38,15 +38,14 @@ const RentAChef =  {
 const Photographer =  {
   name: "Photographer web page",
   description:
-  "This app provides tailored recipes based on your current ingredient inventory, available time, and the number of people you intend to cook for.\n" +
-  "I involved this project with three Melborne members fully online.",
+  "The most crucial aspect of this project is the design that matches with the photographer's vision. I create the design based on the photographer's initial concept, and we collaborate on refining our ideas together \n" +
+  "I am wroking on this project right now and the page will be released on public soon.",
   techStack:
-  "Framework: Ruby on Rails\n" +
-  "Languages: HTML, Sass, Ruby, JavaScript\n" +
+  "Framework: React\n" +
+  "Languages: HTML, Sass, JavaScript\n" +
   "Design: Figma,\n" +
   "Source Code Management: GitHub\n" +
-  "Project Management: Trello\n" +
-  "Collaboration: Slack\n" +
+  "Collaboration: in person, sns tool\n" +
   "Computer: Mac",
   img: lemake
 };
