@@ -12,15 +12,10 @@ import step6_2 from '../images/tutorial/6.recipe-notes-fav.png';
 import step6_3 from '../images/tutorial/6.recipe-notes.png';
 import step6_4 from '../images/tutorial/6.recipe.png';
 import step7 from '../images/tutorial/7.fav.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUtensils } from '@fortawesome/free-solid-svg-icons';
 
 const center = 'd-flex justify-content-center'
-
-const stepone = 'step1'
-const steptwo = 'step2'
-const stepthree = 'step3'
-const stepfour = 'step4'
-const stepfive = 'step5'
-const stepsix = 'step6'
 
 const Project = () => {
   return (
@@ -40,7 +35,10 @@ const Project = () => {
             </div>
             <div className='col-6 projrct-title'>
               <h2>STEP 1</h2>
-              <p>{stepone}</p>
+              <p>
+                Sign in with your email and password,<br></br>
+                then you can see home page as a right image.
+                </p>
             </div>
           </div>
         </div>
@@ -53,7 +51,9 @@ const Project = () => {
             </div>
             <div className='col-6 projrct-title'>
               <h2>STEP 2</h2>
-              <p>{steptwo}</p>
+              <p>
+              <FontAwesomeIcon icon={faUtensils} />
+              </p>
             </div>
           </div>
         </div>
@@ -66,7 +66,7 @@ const Project = () => {
             </div>
             <div className='col-6 projrct-title'>
               <h2>STEP 3</h2>
-              <p>{stepthree}</p>
+              <p></p>
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@ const Project = () => {
             </div>
             <div className='col-6 projrct-title'>
               <h2>STEP 4</h2>
-              <p>{stepfour}</p>
+              <p></p>
             </div>
           </div>
         </div>
@@ -90,7 +90,7 @@ const Project = () => {
               </div>
             <div className='col-6 projrct-title'>
               <h2>STEP 5</h2>
-              <p>{stepfive}</p>
+              <p></p>
             </div>
           </div>
         </div>
@@ -102,7 +102,7 @@ const Project = () => {
             </div>
             <div className='col-6 projrct-title'>
               <h2>STEP 6</h2>
-              <p>{stepsix}</p>
+              <p></p>
             </div>
           </div>
         </div>
