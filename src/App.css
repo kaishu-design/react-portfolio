@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Mada:wght@300;600;700&family=Montserrat:wght@200;300&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mada:wght@300;600;700&family=Montserrat:wght@300&family=Titillium+Web:wght@300&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Mada:wght@300;600;700&family=Montserrat:wght@300&family=Titillium+Web:wght@300&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mada:wght@300;600;700&family=Nanum+Gothic+Coding&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Mada:wght@300;600;700&display=swap');
+
 .App{
   background-color: rgb(253, 248, 225);
+  font-family: 'Mada', sans-serif;
+  font-family: 'Didact Gothic', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  /* font-family: 'Titillium Web', sans-serif; */
+  /* font-family: 'Young Serif', serif; */
 }
 
 /* header */
@@ -40,6 +51,34 @@
 .my-name{
   font-size: 40px;
   padding-right: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(40, end);
+
+
+  .lemon-title h2::after {
+    content: "|"; /* Add the blinking caret */
+    display: inline-block;
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink-caret {
+    from, to {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      border-color: rgba(255, 166, 0, 0.979);
+    }
+  }
 }
 
 .job-title{
@@ -88,6 +127,10 @@
   margin: 0 auto ;
 }
 
+.skill-p{
+  font-size: small;
+}
+
 /* projects */
 .title-line{
   width: 80%;
@@ -97,14 +140,29 @@
   margin-bottom: 30px;
 }
 
-.project-cards{
-  padding-left: 100px;
-  padding-right: 100px;
+.project-cards-container{
+  padding-left: 7%;
+  padding-right: 7%;
 }
 
 .project-card{
   margin: 30px;
   padding: 40px;
+}
+
+.lemake-image{
+  width: 293px;
+  height: 462px;
+  /* width: 200px;
+  height: auto; */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  border: 0.5px solid #000;
+}
+
+.rentChef-image{
+  width: 40%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  border: 0.5px solid #000;
 }
 
 .comming-soon{
@@ -129,8 +187,8 @@
 }
 
 .step-cards{
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .arrow{
