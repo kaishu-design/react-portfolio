@@ -22,7 +22,7 @@ const Project = () => {
   return (
     <div className='container'>
       <div className={`${center} head-title mt-5`}>
-        <h1>leMake</h1>
+        <h1>LE'MAKE</h1>
       </div>
       <div className={`${center} card title-line mt-3`}></div>
 
