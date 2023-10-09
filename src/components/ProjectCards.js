@@ -11,7 +11,7 @@ const leMake = {
   name: "LE'MAKE",
   description:
   "This app provides tailored recipes based on your current ingredient inventory, available time, and the number of people you intend to cook for.\n" +
-  "This was eveloped using speech recognition and ChatGPT technology.",
+  "This was developed using speech recognition and ChatGPT technology.",
   techStack:
   "Team Collaboration: Worked with a team of three members remotely.\n" +
   "Framework: Ruby on Rails\n" +
