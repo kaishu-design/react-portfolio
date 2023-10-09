@@ -17,13 +17,13 @@ const footer = () => {
             <p>Email : kaishu0520@gmail.com</p>
           </div>
           <div className="text-center footer-sns-links">
-              <a href="https://www.linkedin.com/in/kaishu-kawano/" >
+              <a href="https://www.linkedin.com/in/kaishu-kawano/" target='_blank' rel="noreferrer">
               <FontAwesomeIcon icon={faLinkedin} className="footer-sns-link"/>
             </a>
-              <a href="https://www.wantedly.com/id/kaishu" >
+              <a href="https://www.wantedly.com/id/kaishu" target='_blank' rel="noreferrer">
               <img src={wantedly} alt="wantedly" className="footer-wantedly mx-3 mb-2"/>
             </a>
-              <a href="https://github.com/kaishu-design" >
+              <a href="https://github.com/kaishu-design" target='_blank' rel="noreferrer">
               <FontAwesomeIcon icon={faSquareGithub} style={{color: "#ff9d2e",}} className="footer-sns-link" />
             </a>
           </div>

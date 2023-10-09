@@ -37,7 +37,7 @@ const Skills = [
   {
     id: 7,
     skill: 'SQL',
-    img: 'https://www.clipartmax.com/png/middle/243-2432711_azure-sql-database-icon.png'
+    img: 'https://cdn-icons-png.flaticon.com/128/1265/1265531.png'
   },
   {
     id: 8,
@@ -57,13 +57,18 @@ const Skills = [
   {
     id: 11,
     skill: 'GitHub',
-    img: 'https://w7.pngwing.com/pngs/914/758/png-transparent-github-social-media-computer-icons-logo-android-github-logo-computer-wallpaper-banner-thumbnail.png'
+    img: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'
+  },
+  {
+    id: 12,
+    skill: 'Slack',
+    img: 'https://cdn-icons-png.flaticon.com/128/2111/2111615.png'
   },
 ];
 
 export const SkillList = () => {
   const firstColumnSkills = Skills.slice(0, 6);
-  const secondColumnSkills = Skills.slice(6, 11);
+  const secondColumnSkills = Skills.slice(6, 12);
 
   return (
     <div className="row mt-5 skills">
@@ -71,7 +76,7 @@ export const SkillList = () => {
         {firstColumnSkills.map((skill) => (
           <div key={skill.id} className="skill-item">
             <img src={skill.img} alt={skill.skill} className="skill-image" />
-            <p className="text-center fs-6">{skill.skill}</p>
+            <p className="text-center skill-p">{skill.skill}</p>
           </div>
         ))}
       </div>
@@ -79,7 +84,7 @@ export const SkillList = () => {
         {secondColumnSkills.map((skill) => (
           <div key={skill.id} className="skill-item">
             <img src={skill.img} alt={skill.skill} className="item-center skill-image" />
-            <p className="text-center fs-6">{skill.skill}</p>
+            <p className="text-center skill-p">{skill.skill}</p>
           </div>
         ))}
       </div>
@@ -87,18 +92,3 @@ export const SkillList = () => {
   );
 };
 export default SkillList;
-
-// export const SkillList = () => {
-//   return (
-//     <div className="row  mt-5 skills">
-//       <div className={`${center} col-12`}>
-//         {Skills.map((skill) => (
-//           <div  key={skill.id}>
-//             <img src={skill.img} alt={skill.skill} className="skill-image"></img>
-//             <p className="text-center fs-6">{skill.skill}</p>
-//           </div>
-//         ))}
-//         </div>
-//     </div>
-//   );
-// };

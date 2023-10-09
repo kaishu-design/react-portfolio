@@ -14,7 +14,7 @@ const prodfile = () => {
   <div className="row my-5">
     <div className="col-12">
       <div className="container">
-        <div className="frofile d-flex justify-content-center">
+        <div className="profile d-flex justify-content-center">
           <div className="my-name">
             <h2 className="my-name">Hello!<br />I AM KAISHU KAWANO</h2>
             <h4 className="job-title">Software developer</h4>
@@ -25,13 +25,13 @@ const prodfile = () => {
               <img src={myPhoto} alt="Kai" className="my-photo" />
             </div>
             <div className="text-center sns-links">
-              <a href="https://www.linkedin.com/in/kaishu-kawano/" >
+              <a href="https://www.linkedin.com/in/kaishu-kawano/" target='_blank' rel="noreferrer">
               <FontAwesomeIcon icon={faLinkedin} className="sns-link"/>
               </a>
-              <a href="https://www.wantedly.com/id/kaishu" >
+              <a href="https://www.wantedly.com/id/kaishu" target='_blank' rel="noreferrer">
               <img src={wantedly} alt="wantedly" className="wantedly mx-3 mb-3"/>
               </a>
-              <a href="https://github.com/kaishu-design" >
+              <a href="https://github.com/kaishu-design" target='_blank' rel="noreferrer">
               <FontAwesomeIcon icon={faSquareGithub} style={{color: "#ff9d2e",}} className="sns-link" />
               </a>
             </div>
