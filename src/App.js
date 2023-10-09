@@ -2,9 +2,9 @@ import React from 'react';
 import './App';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import HomePage from './pages/HomePage';
-import ProjectsPage from './pages/ProjectsPage';
-import AboutPage from './pages/AboutPage';
+import Home from './pages/Home';
+import Project from './pages/Project';
+import About from './pages/About';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -14,9 +14,9 @@ function App() {
         <Header />
 
         <Routes>
-          <Route path="/HomePage"  element={<HomePage />} />
-          <Route path="/ProjectsPage"  element={<ProjectsPage />} />
-          <Route path="/AboutPage"  element={<AboutPage />} />
+          <Route path="/"  element={<Home />} />
+          <Route path="/Project"  element={<Project />} />
+          <Route path="/About"  element={<About />} />
         </Routes>
 
         <Footer />

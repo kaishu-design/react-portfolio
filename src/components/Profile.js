@@ -39,7 +39,7 @@ const prodfile = () => {
             </div>
               <div className='d-flex justify-content-center mt-3'>
                 <a href={resume} download className="btn btn-outline-secondary text-decoration-none ms-2"><FontAwesomeIcon icon={faDownload} style={{color: "#6c757d",}}/>Resume</a>
-                <Link to="/AboutPage" className="btn btn-outline-secondary text-decoration-none ms-2">About me</Link>
+                <Link to="/About" className="btn btn-outline-secondary text-decoration-none ms-2">About me</Link>
               </div>
           </div>
         </div>
