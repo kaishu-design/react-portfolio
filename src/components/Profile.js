@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import resume from '../pdf/20230929_KaishuKawano_Resume.pdf'
 
 const wantedly = "https://theme.zdassets.com/theme_assets/650189/6d25a979173b46b210b08e3e42289b1bf3e12bdc.ico"
 
@@ -35,7 +37,10 @@ const prodfile = () => {
               <FontAwesomeIcon icon={faSquareGithub} style={{color: "#ff9d2e",}} className="sns-link" />
               </a>
             </div>
-              <Link to="/AboutPage" className="text-center btn btn-outline-secondary text-decoration-none mx-5 mt-3">About me</Link>
+              <div className='d-flex justify-content-center mt-3'>
+                <a href={resume} download className="btn btn-outline-secondary text-decoration-none ms-2"><FontAwesomeIcon icon={faDownload} style={{color: "#6c757d",}}/>Resume</a>
+                <Link to="/About" className="btn btn-outline-secondary text-decoration-none ms-2">About me</Link>
+              </div>
           </div>
         </div>
       </div>

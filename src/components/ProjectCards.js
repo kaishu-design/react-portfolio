@@ -84,7 +84,7 @@ const ProjectCards = () => {
               </div>
               <div className="d-flex justify-content-end">
                   <Link to="https://github.com/HoraceLChen/LEMAKE" className="btn btn-outline-secondary text-decoration-none ms-3"  target='_blank' rel="noreferrer">See Code</Link>
-                  <Link to="/ProjectsPage" className="btn btn-outline-secondary text-decoration-none ms-3">See tutorial</Link>
+                  <Link to="/Project" className="btn btn-outline-secondary text-decoration-none ms-3">See tutorial</Link>
               </div>
             </div>
           </div>
