@@ -43,25 +43,27 @@ const Gallery = () => {
           </button>
         </nav>
 
-        <div className="photos-container d-flex justify-content-center">
-          {selectedGenre === 'nature' && (
-            <div className="nature-photos">
-              Nature photos
-            </div>
-          )}
+        <div className='d-flex justify-content-center'>
+          <div className="photos-container d-flex justify-content-center">
+            {selectedGenre === 'nature' && (
+              <div className="nature-photos">
+                Nature photos
+              </div>
+            )}
 
-          {selectedGenre === 'landscape' && (
-            <div className="landscape-photos">
-              Landscape photos
-            </div>
-          )}
+            {selectedGenre === 'landscape' && (
+              <div className="landscape-photos">
+                Landscape photos
+              </div>
+            )}
 
-          {selectedGenre === 'other' && (
-            <div className="other-photos">
-              Other photos
-            </div>
-          )}
+            {selectedGenre === 'other' && (
+              <div className="other-photos">
+                Other photos
+              </div>
+            )}
 
+        </div>
       </div>
       </div>
     </div>
