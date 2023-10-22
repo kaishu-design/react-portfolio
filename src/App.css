@@ -8,9 +8,6 @@
   background-color: rgb(253, 248, 225);
   font-family: 'Mada', sans-serif;
   font-family: 'Didact Gothic', sans-serif;
-  /* font-family: 'Montserrat', sans-serif; */
-  /* font-family: 'Titillium Web', sans-serif; */
-  /* font-family: 'Young Serif', serif; */
 }
 
 /* header */
@@ -201,10 +198,10 @@
 }
 
 .about{
-  width: 100%;
+  /* width: 100%;
   padding-top: 250px;
   padding-bottom: 250px;
   margin-top: 20px;
   margin-bottom: 20px;
-  border: none;
+  border: none; */
 }

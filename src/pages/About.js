@@ -1,11 +1,12 @@
 import React from 'react'
+import Introduce from '../components/introduce.js';
 
 const Portfolio = () => {
   return (
     <div className='container'>
-      <div className='d-flex justify-content-center text-center about'>
-        This page is coming soon!
-      </div>
+
+        <Introduce/>
+
     </div>
   )
 }
