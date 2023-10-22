@@ -205,3 +205,11 @@
   margin-bottom: 20px;
   border: none; */
 }
+
+.title-card{
+  width: 200px;
+  margin: auto;
+  padding: 10px;
+  box-shadow: 1px 1px 2px rgba(129, 129, 129, 0.4);
+  border: 0.5px solid rgba(129, 129, 129, 0.4);
+}
