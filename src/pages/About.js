@@ -1,11 +1,12 @@
 import React from 'react'
+import Introduce from '../components/introduce.js';
+import Gallery from '../components/Gallery.js';
 
 const Portfolio = () => {
   return (
     <div className='container'>
-      <div className='d-flex justify-content-center text-center about'>
-        This page is coming soon!
-      </div>
+        <Introduce/>
+        <Gallery/>
     </div>
   )
 }
