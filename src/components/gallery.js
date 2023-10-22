@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react';
 
-const gallery = () => {
+const Gallery = () => {
+  const [selectedGenre, setSelectedGenre] = useState('nature');
+
+  const handleGenreClick = (genre) => {
+    setSelectedGenre(genre);
+  };
+
   return (
     <div class="container">
       <div className='d-flex justify-content-center'>
@@ -8,17 +14,58 @@ const gallery = () => {
       </div>
       <div className='gallery-box'>
 
-      <div className='genre d-flex justify-content-center'>
-        <div className='card p-1 m-2'>nature</div>
-        <div className='card p-1 m-2'>Landscape</div>
-        <div className='card p-1 m-2'>Others</div>
-      </div>
-      <div className='photos-container d-flex justify-content-center'>
-        photos
+      <nav class="nav nav-pills nav-fill d-flex justify-content-center">
+        <button
+          className={`btn btn-outline-secondary mx-2 genre-item ${
+            selectedGenre === 'nature' ? 'is-active' : ''
+          }`}
+          onClick={() => handleGenreClick('nature')}
+        >
+          nature
+        </button>
+
+        <button
+          className={`btn btn-outline-secondary mx-2 genre-item ${
+            selectedGenre === 'landscape' ? 'is-active' : ''
+          }`}
+          onClick={() => handleGenreClick('landscape')}
+          >
+          Landscape
+        </button>
+
+          <button
+            className={`btn btn-outline-secondary mx-2 genre-item ${
+              selectedGenre === 'others' ? 'is-active' : ''
+            }`}
+            onClick={() => handleGenreClick('other')}
+          >
+            Others
+          </button>
+        </nav>
+
+        <div className="photos-container d-flex justify-content-center">
+          {selectedGenre === 'nature' && (
+            <div className="nature-photos">
+              Nature photos
+            </div>
+          )}
+
+          {selectedGenre === 'landscape' && (
+            <div className="landscape-photos">
+              Landscape photos
+            </div>
+          )}
+
+          {selectedGenre === 'other' && (
+            <div className="other-photos">
+              Other photos
+            </div>
+          )}
+
       </div>
       </div>
     </div>
   )
 }
 
-export default gallery
+export default Gallery

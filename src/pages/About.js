@@ -1,6 +1,6 @@
 import React from 'react'
 import Introduce from '../components/introduce.js';
-import Gallery from '../components/gallery.js'
+import Gallery from '../components/Gallery.js';
 
 const Portfolio = () => {
   return (
