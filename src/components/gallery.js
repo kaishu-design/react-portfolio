@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import NaturePhotos from '../components/nature.js';
 
 const Gallery = () => {
   const [selectedGenre, setSelectedGenre] = useState('nature');
@@ -47,7 +48,7 @@ const Gallery = () => {
           <div className="photos-container d-flex justify-content-center">
             {selectedGenre === 'nature' && (
               <div className="nature-photos">
-                Nature photos
+                <NaturePhotos/>
               </div>
             )}
 
