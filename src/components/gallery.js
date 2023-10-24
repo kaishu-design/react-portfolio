@@ -9,14 +9,14 @@ const Gallery = () => {
 
   return (
     <div class="container">
-      <div className='d-flex justify-content-center'>
-        <h4>Gallery</h4>
-      </div>
+      {/* <div className='d-flex justify-content-center mt-5'>
+        <h3>Gallery</h3>
+      </div> */}
       <div className='gallery-box'>
 
       <nav class="nav nav-pills nav-fill d-flex justify-content-center">
         <button
-          className={`btn btn-outline-secondary mx-2 genre-item ${
+          className={`border-0 genre-item ${
             selectedGenre === 'nature' ? 'is-active' : ''
           }`}
           onClick={() => handleGenreClick('nature')}
@@ -25,7 +25,7 @@ const Gallery = () => {
         </button>
 
         <button
-          className={`btn btn-outline-secondary mx-2 genre-item ${
+          className={`border-0 genre-item ${
             selectedGenre === 'landscape' ? 'is-active' : ''
           }`}
           onClick={() => handleGenreClick('landscape')}
@@ -34,10 +34,10 @@ const Gallery = () => {
         </button>
 
           <button
-            className={`btn btn-outline-secondary mx-2 genre-item ${
+            className={`border-0 genre-item ${
               selectedGenre === 'others' ? 'is-active' : ''
             }`}
-            onClick={() => handleGenreClick('other')}
+            onClick={() => handleGenreClick('others')}
           >
             Others
           </button>
@@ -57,8 +57,8 @@ const Gallery = () => {
               </div>
             )}
 
-            {selectedGenre === 'other' && (
-              <div className="other-photos">
+            {selectedGenre === 'others' && (
+              <div className="others-photos">
                 Other photos
               </div>
             )}

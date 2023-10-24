@@ -235,8 +235,19 @@ rounded-pill */
   border: 1px solid rgba(129, 129, 129, 0.4);
 }
 
+.genre-item{
+  border-radius: 20px;
+  background-color:rgb(253, 248, 225);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
 .genre-item.is-active{
-  background-color: rgb(108, 117, 125);
+  background-color: rgb(198, 202, 206);
   color: white;
 }
 
