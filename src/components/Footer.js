@@ -7,6 +7,7 @@ import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
 
 const wantedly = "https://theme.zdassets.com/theme_assets/650189/6d25a979173b46b210b08e3e42289b1bf3e12bdc.ico"
 
+// for memo
 const footer = () => {
   return (
     <nav className="navbar navbar-expand-lg header-back">
