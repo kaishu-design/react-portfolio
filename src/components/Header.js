@@ -1,32 +1,27 @@
 import React from 'react';
 import '../App.css';
 import { Link } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 const header = () => {
   return (
-
-    <nav className="navbar navbar-expand-lg bg-body-tertiary header-back">
-    <div className="container-fluid">
-    <Link to="/" className="text-decoration-none title-link">Portfolio</Link>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse d-flex justify-content-evenly" id="navbarNav">
-      <ul className="navbar-nav">
-        <li className="nav-item fs-4">
-          <Link to="/" className="text-decoration-none text-link">Home</Link>
-        </li>
-        <li className="nav-item mx-5 fs-4">
-          <Link to="/Project" className="text-decoration-none text-link">Project</Link>
-        </li>
-        <li className="nav-item fs-4">
-          <Link to="/About"  className="text-decoration-none text-link">About</Link>
-        </li>
-      </ul>
-      </div>
-    </div>
-  </nav>
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Brand >
+          <Link to="/" className="text-decoration-none title-link">Portfolio</Link>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto">
+                <Link to="/" className="text-decoration-none text-link">Home</Link>
+                <Link to="/Project" className="text-decoration-none text-link">Project</Link>
+                <Link to="/About"  className="text-decoration-none text-link">About</Link>
+              </Nav>
+            </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
-
 export default header

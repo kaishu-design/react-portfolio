@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import NaturePhotos from '../components/nature.js';
+import NaturePhotos from './NaturePhotos.js';
 
 const Gallery = () => {
   const [selectedGenre, setSelectedGenre] = useState('nature');
@@ -10,9 +10,6 @@ const Gallery = () => {
 
   return (
     <div class="container">
-      {/* <div className='d-flex justify-content-center mt-5'>
-        <h3>Gallery</h3>
-      </div> */}
       <div className='gallery-box'>
 
       <nav class="nav nav-pills nav-fill d-flex justify-content-center">
@@ -37,7 +34,7 @@ const Gallery = () => {
           <button
             className={`border-0 genre-item ${
               selectedGenre === 'others' ? 'is-active' : ''
-            }`}
+            }`} // if分の省略
             onClick={() => handleGenreClick('others')}
           >
             Others

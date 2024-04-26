@@ -1,6 +1,7 @@
 import React from 'react'
-import Introduce from '../components/introduce.js';
-import Gallery from '../components/gallery.js';
+import Introduce from '../components/Introduce.js';
+import Gallery from '../components/Gallery.js';
+// import { useMediaQuery } from 'react-responsive'
 
 const Portfolio = () => {
   return (
