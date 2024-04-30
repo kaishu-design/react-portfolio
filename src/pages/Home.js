@@ -4,12 +4,10 @@ import Projects from '../components/Projects.js';
 
 const HomePage = () => {
   return (
-  <div className="row my-5">
-    <div className="col-12">
+  <div className="my-5">
       <Profile />
 
       <Projects />
-    </div>
   </div>
   );
 }

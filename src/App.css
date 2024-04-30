@@ -46,8 +46,10 @@
 
 /* profile */
 .my-name{
-  font-size: 40px;
-  padding-right: 15px;
+  /* font-size: 40px; */
+  /* padding-right: 15px; */
+  margin-top: 20px;
+  text-align: center;
   overflow: hidden;
   white-space: nowrap;
   animation: typing 3s steps(40, end);
@@ -79,9 +81,9 @@
 }
 
 .job-title{
-  font-size: 35px;
+  /* font-size: 35px; */
   margin-top: 40px;
-  padding-right: 10px;
+  /* padding-right: 10px; */
 }
 
 .photo-card{
