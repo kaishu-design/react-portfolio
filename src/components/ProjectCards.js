@@ -77,7 +77,7 @@ const ProjectCards = () => {
                 </div>
               </Col>
               <Col xs={12} xl={7}>
-                <div className='projrct-info fs-5'>
+                <div className='projrct-info fs-5 pt-4'>
                   <div className='mb-3 projrct-desc'>
                     {leMake.description.split('\n').map((line, index) => (
                       <p key={index} className="m-0">{line}</p>
@@ -107,7 +107,7 @@ const ProjectCards = () => {
               <img src={RentAChef.img1} alt={RentAChef.name} className='mx-3 rentChef-image' />
               <img src={RentAChef.img2} alt={RentAChef.name} className='mx-3 rentChef-image' />
             </div>
-            <div className='col-12 projrct-info fs-5 p-5 pb-0'>
+            <div className='col-12 projrct-info fs-5 pt-4 pb-0'>
               <div className='mb-3 projrct-desc'>
                 {RentAChef.description.split('\n').map((line, index) => (
                   <p key={index} className="m-0">{line}</p>
@@ -128,7 +128,6 @@ const ProjectCards = () => {
         </div>
 
       </div>
-
   )
 }
 
