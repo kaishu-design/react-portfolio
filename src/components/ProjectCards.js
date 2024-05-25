@@ -1,11 +1,13 @@
-import React from 'react'
-// import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect } from 'react'
 import lemake from '../images/le-make-img.png'
 import rentChefHome from '../images/top_page.png'
 import rentChefList from '../images/list.png'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faImage } from '@fortawesome/free-regular-svg-icons';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const leMake = {
   name: "LE'MAKE",
@@ -67,27 +69,33 @@ const ProjectCards = () => {
           <div className="mb-2">
             <h2  className="text-center">{leMake.name}</h2>
           </div>
-          <div className='row'>
-            <div className='col-5 text-center'>
-              <img src={leMake.img} alt={leMake.name} className='m-4 lemake-image' />
-            </div>
-            <div className='col-7 projrct-info fs-5 p-5'>
-              <div className='mb-3 projrct-desc'>
-                {leMake.description.split('\n').map((line, index) => (
-                  <p key={index} className="m-0">{line}</p>
-                ))}
-              </div>
-              <div className='mb-3 projrct-techStack'>
-                {leMake.techStack.split('\n').map((line, index) => (
-                  <p key={index} className="m-0">{line}</p>
-                ))}
-              </div>
-              <div className="d-flex justify-content-end">
-                  <Link to="https://github.com/HoraceLChen/LEMAKE" className="btn btn-outline-secondary text-decoration-none ms-3"  target='_blank' rel="noreferrer">See Code</Link>
-                  <Link to="/Project" className="btn btn-outline-secondary text-decoration-none ms-3">See tutorial</Link>
-              </div>
-            </div>
-          </div>
+          <Container>
+            <Row className="justify-content-md-center">
+              <Col xs={12} xl={5}>
+                <div className='text-center'>
+                    <img src={leMake.img} alt={leMake.name} className='lemake-image' />
+                </div>
+              </Col>
+              <Col xs={12} xl={7}>
+                <div className='projrct-info fs-5'>
+                  <div className='mb-3 projrct-desc'>
+                    {leMake.description.split('\n').map((line, index) => (
+                      <p key={index} className="m-0">{line}</p>
+                    ))}
+                  </div>
+                  <div className='mb-3 projrct-techStack'>
+                    {leMake.techStack.split('\n').map((line, index) => (
+                      <p key={index} className="m-0">{line}</p>
+                    ))}
+                  </div>
+                  <div className="d-flex justify-content-end">
+                      <Link to="https://github.com/HoraceLChen/LEMAKE" className="btn btn-outline-secondary text-decoration-none ms-3"  target='_blank' rel="noreferrer">See Code</Link>
+                      <Link to="/Project" className="btn btn-outline-secondary text-decoration-none ms-3">See tutorial</Link>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </Container>
         </div>
 
         <div className="project-card row card my-4">
@@ -115,32 +123,6 @@ const ProjectCards = () => {
               </div>
             </div>
             <div className='col-12 text-center'>
-            </div>
-          </div>
-        </div>
-
-        <div className="project-card row card my-4">
-          <div className="mb-2">
-            <h2  className="text-center">{Photographer.name}</h2>
-          </div>
-          <div className='row'>
-          <div className='col-5 text-center comming-soon'>
-            <FontAwesomeIcon icon={faImage} style={{color: "#929bab",}} />
-            <p>Commig soon</p>
-          </div>
-            <div className='col-7 projrct-info fs-5 p-5'>
-              <div className='mb-3 projrct-desc'>
-                {Photographer.description.split('\n').map((line, index) => (
-                  <p key={index} className="m-0">{line}</p>
-                ))}
-              </div>
-              <div className='mb-3 projrct-techStack'>
-                {Photographer.techStack.split('\n').map((line, index) => (
-                  <p key={index} className="m-0">{line}</p>
-                ))}
-              </div>
-              <div className="d-flex justify-content-end">
-              </div>
             </div>
           </div>
         </div>
