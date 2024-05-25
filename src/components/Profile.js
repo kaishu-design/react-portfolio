@@ -14,11 +14,14 @@ import Col from 'react-bootstrap/Col';
 const wantedly = "https://theme.zdassets.com/theme_assets/650189/6d25a979173b46b210b08e3e42289b1bf3e12bdc.ico"
 
 const Prodfile = () => {
+    // difine the useStrate
   const [screenSize, setScreenSize] = useState('');
+    // when innerWindow is over 1200, screen design changes
   useEffect(() => {
   const handleResize = () => {
     window.innerWidth >= 1200? setScreenSize('xl') : setScreenSize('lg');
   }
+  // call handleResize function when the screen is resized.
   handleResize();
   window.addEventListener('resize', handleResize);
   return () => window.removeEventListener('resize', handleResize);
@@ -39,6 +42,7 @@ const Prodfile = () => {
               </div>
             </div>
           </Col>
+
           <Col xs={12} xl={5} className="order-1 order-xl-2">
             <div className={`profile-photo d-flex justify-content-${screenSize === 'xl' ? 'start' : 'center'}`}>
               <div className="card photo-card">

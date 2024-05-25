@@ -116,7 +116,7 @@
 }
 
 .skill-item{
-  margin-right: 20px;
+  margin: 10px;
 }
 
 .skill-image{
@@ -260,4 +260,9 @@ rounded-pill */
 .nature-photo{
   width: 400px;
   margin: 20px;
+}
+
+
+.responsive-margin{
+  margin-top: 250px;
 }
